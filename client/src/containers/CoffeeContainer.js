@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RecipeList from '../components/RecipeList';
 
 class CoffeeContainer extends Component {
   constructor(props) {
@@ -22,7 +23,12 @@ class CoffeeContainer extends Component {
   }
 
   render() {
-    return <h1>Coffee Recipes</h1>;
+    return (
+      <div className="coffee-container">
+        <h1>Coffee Recipes</h1>
+        <RecipeList recipes={this.state.recipes} />
+      </div>
+    );
   }
 }
 
