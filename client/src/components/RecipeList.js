@@ -1,7 +1,14 @@
 import React from 'react';
+import Recipe from './Recipe';
 
 const RecipeList = ({ recipes }) => {
-  return <h3>Recipe list here!</h3>
+  const recipeNodes = recipes.map(recipe => <Recipe recipe={recipe} />)
+
+  return (
+    <div className="recipe-list">
+      {recipeNodes}
+    </div>
+  );
 };
 
 export default RecipeList;
