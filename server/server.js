@@ -5,6 +5,8 @@ const MongoClient = require('mongodb').MongoClient;
 const parser = require('body-parser');
 const cors = require('cors');
 
+app.use(cors());
+
 MongoClient.connect('mongodb://localhost:27017')
   .then(client => {
     const db = client.db('coffee_recipes');
