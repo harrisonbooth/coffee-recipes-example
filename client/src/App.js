@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import CoffeeContainer from './containers/CoffeeContainer';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <CoffeeContainer />
   );
 }
 
